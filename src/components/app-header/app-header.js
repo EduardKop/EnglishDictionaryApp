@@ -1,12 +1,14 @@
-import React from "react";
+import React from 'react';
 
-const AppHeder = () => {
-  return (
-    <div className="app-header d-flex">
-      <h1>Eduard </h1>
-      <h2>5 записей, из них понравились 0</h2>
-    </div>
-  );
-};
+import './app-header.css'
 
-export default AppHeder;
+const AppHeader = ({liked, allPosts}) => {
+    return (
+        <div className="app-header d-flex">
+            <h1>English Dictionary</h1>
+            <h2>{allPosts} words, already studied {liked}</h2>
+        </div>
+    )
+}
+
+export default AppHeader;
